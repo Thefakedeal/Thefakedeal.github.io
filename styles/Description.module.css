@@ -1,0 +1,20 @@
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title{
+    color: #00162b !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.subTitle{
+    font-weight: bold;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

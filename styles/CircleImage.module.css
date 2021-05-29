@@ -1,0 +1,13 @@
+.circleImage{
+    background-image: url('/img/myimage.jpg');
+    padding-top: 100%;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+@media only screen and (min-width: 992px){
+    .circleImage{
+        box-shadow: 10rem 8rem 9px -5rem #00162b;
+    }
+}
