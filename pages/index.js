@@ -7,8 +7,9 @@ export default function Home({ technologies }) {
   return (
     <>
       <Head>
-        <title>Introduction</title>
+        <title>Samir Shrestha | The Fake Deal</title>
         <meta name="description" content="Web Developer"></meta>
+        <meta name="keywords" content="react, node js, laravel, web development, javascript, php"></meta>
       </Head>
       <Banner />
       <Technologies technologies={technologies} />
