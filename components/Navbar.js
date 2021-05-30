@@ -1,6 +1,7 @@
 import { Menu, Layout, Typography } from "antd";
 import {useRouter} from 'next/router'
 import { BulbFilled } from "@ant-design/icons";
+import styles from '../styles/Navbar.module.css'
 import Link from "next/link";
 const { Text } = Typography;
 
@@ -26,11 +27,11 @@ export default function Navbar() {
   ]
   return (
     <Layout.Header className="d-flex align-items-center">
-      <div className="logo d-flex  align-items-center" onClick={()=>router.push('/')}>
+      <div className={styles.logo} onClick={()=>router.push('/')}>
         <BulbFilled className="text-white fs-5 px-1" />
-        <Text className="text-white">Samir Shrestha</Text>
+        <Text className="text-white">SamirShrestha</Text>
       </div>
-      <Menu mode="horizontal" selectable={false} className="d-flex flex-wrap justify-content-end flex-grow-1" theme="dark">
+      <Menu mode="horizontal" selectable={false} className="d-flex flex-wrap justify-content-end " theme="dark">
         {
           routes.map(({href,title,key})=>(
             <Menu.Item  >
