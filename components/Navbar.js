@@ -28,7 +28,7 @@ export default function Navbar() {
     <Layout.Header className="d-flex align-items-center">
       <div className="logo d-flex  align-items-center" onClick={()=>router.push('/')}>
         <BulbFilled className="text-white fs-5 px-1" />
-        <Text className="text-white">thefakedeal</Text>
+        <Text className="text-white">Samir Shrestha</Text>
       </div>
       <Menu mode="horizontal" selectable={false} className="d-flex flex-wrap justify-content-end flex-grow-1" theme="dark">
         {
