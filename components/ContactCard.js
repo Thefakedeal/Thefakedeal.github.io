@@ -9,9 +9,11 @@ export default function ContactCard() {
           size={{ xs: 200, sm: 200, md: 250, lg: 250, xl: 250, xxl: 250}}
           src="/img/myimage.jpg" />
           <ContactDetails />
-          <Button type="primary" className={styles.button} icon={<MailFilled/>}>
-              Send Email
-          </Button>
+          <a className="text-decoration-none" href="mailto:theonlysamir@gmail.com" target="__blank"> 
+            <Button type="primary" className={styles.button} icon={<MailFilled/>}>
+                Send Email
+            </Button>
+          </a>
         </div>
     )
 }
