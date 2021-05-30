@@ -1,4 +1,6 @@
 .image{
-    object-fit: cover;
-    object-position: center;
+    background-position: center;
+    background-size: cover;
+    height: 10rem;
+    padding-top: 60%;
 }
