@@ -21,7 +21,11 @@ export default function Navbar() {
             <a className="text-decoration-none ">About Me</a>
           </Link>
         </Menu.Item>
-        
+        <Menu.Item >
+          <Link href="/contact" key="3">
+            <a className="text-decoration-none ">Contact</a>
+          </Link>
+        </Menu.Item>
       </Menu>
     </Layout.Header>
   );
