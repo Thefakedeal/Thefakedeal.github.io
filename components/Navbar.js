@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, Layout, Typography, Drawer, Button, List } from "antd";
 import { useRouter } from "next/router";
-import { BulbFilled, MenuFoldOutlined } from "@ant-design/icons";
+import { BulbFilled, MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
 import styles from "../styles/Navbar.module.css";
 import Link from "next/link";
 const { Text } = Typography;
@@ -81,7 +81,7 @@ export default function Navbar() {
         className="d-flex align-items-center fs-4 d-lg-none text-white py-auto"
         onClick={() => setVisible(true)}
       >
-        <MenuFoldOutlined />
+        {visible?<MenuUnfoldOutlined />: <MenuFoldOutlined />}
       </Button>
       <SideDrawer visible={visible} onClose={() => setVisible(false)} />
       {/* End Visible  On Small Screen */}
