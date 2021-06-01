@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2ch;
+    /* padding: 2ch; */
     margin: 2ch 0px;
     width: 90%;
 }

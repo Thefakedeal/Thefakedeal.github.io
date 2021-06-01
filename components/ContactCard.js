@@ -5,7 +5,7 @@ import ContactDetails from './ContactDetails'
 export default function ContactCard() {
     return (
         <div className={`${styles.card} card shadow-sm mx-auto p-2 my-4`}>
-          <Avatar className="m-4" shape="circle" 
+          <Avatar className=" mx-auto" shape="circle" 
           size={{ xs: 200, sm: 200, md: 250, lg: 250, xl: 250, xxl: 250}}
           src="/img/myimage.jpg" />
           <ContactDetails />
