@@ -25,6 +25,7 @@ const routes = [
 ];
 
 export const SideDrawer = ({ visible, onClose }) => {
+  const router = useRouter();
   return (
     <Drawer
       placement={"right"}
@@ -34,7 +35,9 @@ export const SideDrawer = ({ visible, onClose }) => {
     >
       <List>
         {routes.map(({ href, title, key }) => (
-          <List.Item>
+          <List.Item onClick={
+            ()=>router.push(href)
+          }>
             <Link href={href} key={key}>
               <Button type="text">{title}</Button>
             </Link>
@@ -50,7 +53,7 @@ export default function Navbar() {
   const [visible, setVisible] = useState(false);
 
   return (
-    <Layout.Header className="d-flex align-items-center px-1 px-lg-4">
+    <Layout.Header className="d-flex align-items-center px-1 px-md-2 px-lg-4">
       <div className={styles.logo} onClick={() => router.push("/")}>
         <BulbFilled className="text-white fs-5 px-1" />
         <Text className="text-white">Samir Shrestha</Text>
