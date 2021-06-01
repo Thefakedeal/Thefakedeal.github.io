@@ -7,7 +7,7 @@ export default function Banner() {
   return (
     <div className={styles.banner}> 
       <div className={styles.container}>
-        <Title className="text-white text-center ">
+        <Title className="text-white text-center fs-2 ">
           Hello I'm Samir Shrestha. <br />
           I'm A <span className="text-danger"> Full Stack Web Developer! </span>
         </Title>
