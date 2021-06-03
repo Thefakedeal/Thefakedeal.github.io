@@ -5,7 +5,7 @@ import {EyeFilled} from '@ant-design/icons'
 
 export default function Projects({ projects = [] }) {
   return (
-    <div className="container align-items-center row mx-auto py-4">
+    <div className="container-fluid align-items-center row gy-2 py-4">
         <Typography.Title level={2} className="text-center fs-3 py-2">
             Some Projects I'm Involved in
         </Typography.Title>
