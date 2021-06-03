@@ -22,7 +22,7 @@ export default function Projects({ projects = [] }) {
                   backgroundImage: `linear-gradient(rgba(0, 128, 128, 0.9),rgba(0, 128, 128, 0.9)), url(${project.image})`,
                 }}
               >
-                <Typography.Text className="fs-5 text-white">
+                <Typography.Text className="fs-5 pt-2 text-white">
                   {project.title}
                 </Typography.Text>
                 <Typography.Paragraph className="fs-6 text-light">
