@@ -1,0 +1,26 @@
+[
+    {
+        "id": "hotel-dharan-kitchen",
+        "title": "Hotel Dharan Kitchen",
+        "description": "A Website, Hotel Booking System & A Restaurant Menu Management System.",
+        "link": "https://dharankitchen.com/",
+        "image":"/img/projects/hdk.png"
+    },
+    {
+        "id": "tyson-real-estate",
+        "title": "Tyson Real Estate",
+        "description": "A Multi Agent Real Estate Platform for users to buy, sell or rent Real Estate.",
+        "link": "https://tysonrealestate.com.np/",
+        "image":"/img/projects/tys.png"
+
+    },
+    {
+        "id": "cct-dharan",
+        "title": "Central Campus of Technology",
+        "description": "A College Website CMS along with Result Publishing system",
+        "link": "https://cctdharan.edu.np/",
+        "image":"/img/projects/cct.png"
+
+    }
+
+]
