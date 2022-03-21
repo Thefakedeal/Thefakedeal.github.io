@@ -16,9 +16,9 @@
     box-shadow: 0 0 10px 5px;
     background: linear-gradient(172deg, #a228f5, #ee1aca, #ee1a1a);
     background-size: 600% 600%;
-    -webkit-animation: circleAnimate 2s ease infinite;
-    -moz-animation: circleAnimate 2s ease infinite;
-    animation: circleAnimate 2s ease infinite;
+    -webkit-animation: circleAnimate 1.8s ease infinite;
+    -moz-animation: circleAnimate 1.8s ease infinite;
+    animation: circleAnimate 1.8s ease infinite;
 }
 
 @-webkit-keyframes circleAnimate {

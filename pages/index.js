@@ -17,23 +17,23 @@ export default function Home() {
             <div>
               <h1 className='text-white'>
               Hello I'm Samir Shrestha. <br />
-                I'm A Full Stack Web Developer! 
+                I'm A Full Stack Web Developer!
               </h1>
               <div
                 className={styles.links}
               >
-                <a href="https://github.com/Thefakedeal" target="_blank">
+                <a title='Github Profile' href="https://github.com/Thefakedeal" target="_blank">
                   <img src="/img/ghub.png" alt="Github" className={styles.link_img} />
                 </a>
 
-                <a href="https://www.linkedin.com/in/samir-shrestha-16050a210/" target="_blank">
+                <a title='LinkedIn Profile' href="https://www.linkedin.com/in/samir-shrestha-16050a210/" target="_blank">
                   <img src="/img/linkedin.png" alt="Linkedin" className={styles.link_img} />
                 </a>
               </div>
             </div>
           </section>
           <div className="col-md-4 d-flex align-items-center justify-content-center">
-            <div className="col-8 py-4 col-md-12">
+            <div className="col-9 py-4 col-md-12">
               <DisplayPicture />
             </div>
           </div>

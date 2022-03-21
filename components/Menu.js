@@ -55,6 +55,10 @@ export default function Menu({ links = [], handleClose }) {
                 scale: 1.3,
                 color: "purple",
               }}
+              whileTap={{
+                scale: 1.3,
+                color: "purple",
+              }}
               transition={{
                 type: "spring",
                 stiffness: 150,
@@ -62,7 +66,7 @@ export default function Menu({ links = [], handleClose }) {
               key={link.title}
             >
               <Link href={link.url}>
-                <h1>{link.title}</h1>
+                <h1 className={styles.head} >{link.title}</h1>
               </Link>
             </motion.li>
           ))}
