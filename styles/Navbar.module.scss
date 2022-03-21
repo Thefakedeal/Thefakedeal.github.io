@@ -3,6 +3,8 @@
     background-color: var(--primary-dark); 
     margin: 0px;
     height: var(--nav-height);
+    display: flex;
+    
 }
 
 .links ul{
@@ -21,5 +23,5 @@
 
 .links li a{
     text-decoration: none;
-    color: white;
+    color: inherit;
 }
