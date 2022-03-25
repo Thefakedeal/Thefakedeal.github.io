@@ -4,6 +4,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import Menu from "./Menu";
 import { useState } from "react";
 import { GoThreeBars } from "react-icons/go";
+
+
 const links = [
   {
     title: "Home",
@@ -15,7 +17,7 @@ const links = [
   },
   {
     title: "Contact",
-    url: "/",
+    url: "/contact",
   },
   {
     title: "About Me",
@@ -25,7 +27,7 @@ const links = [
 
 export default function Navbar() {
   const [viewMenu, setViewMenu] = useState(false);
-
+  
   const open = () => setViewMenu(true);
   const close = () => setViewMenu(false);
   return (
@@ -46,7 +48,9 @@ export default function Navbar() {
               }}
               key={link.title}
             >
-              <Link href={link.url}>{link.title}</Link>
+              <Link 
+                
+              href={link.url}>{link.title}</Link>
             </motion.li>
           ))}
         </ul>

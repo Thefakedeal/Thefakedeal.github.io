@@ -14,6 +14,5 @@ a {
 * {
   box-sizing: border-box;
   --primary-dark : #0D0D0D;
-  --nav-height: 2rem;
+  --nav-height: 54px;
 }
-
