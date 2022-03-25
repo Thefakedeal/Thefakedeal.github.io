@@ -21,7 +21,7 @@ const links = [
   },
   {
     title: "About Me",
-    url: "/",
+    url: "/about",
   },
 ];
 

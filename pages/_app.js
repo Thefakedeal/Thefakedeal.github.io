@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import Navbar from '../components/Navbar'
-import '../styles/globals.css'
+import '../styles/globals.scss'
 import { AnimatePresence } from 'framer-motion'
 
 function MyApp({ Component, pageProps, router }) {

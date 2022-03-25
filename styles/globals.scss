@@ -14,5 +14,13 @@ a {
 * {
   box-sizing: border-box;
   --primary-dark : #0D0D0D;
+  --secondary-dark: #0E0E0E;
   --nav-height: 54px;
 }
+
+body{
+  overflow-x: hidden;
+}
+
+
+:root{ scrollbar-color:  rgb(39, 39, 39) var(--primary-dark) }
