@@ -10,6 +10,7 @@ const containerVariant = {
   },
   visible: {
     x: 0,
+ 
     transition: {
       duration: 1,
       type: "spring",
@@ -24,6 +25,15 @@ const containerVariant = {
     },
   },
 };
+
+const hoverStyle={
+    color: ["#a228f5", "#ee1aca", "#ee1a1a"],
+    transition: {
+        yoyo: Infinity,
+        duration: 2,
+        ease: "easeInOut",
+    },
+}
 
 export default function contact() {
   return (
@@ -49,31 +59,59 @@ export default function contact() {
                 <i >Software Developer</i>
                 <div className="mt-4">
                 <div title="Email"  className="py-2">
-                    <a href="mailto:theonlysamir@gmail.com" title="Email" className={`fs-5 ${styles.link}`}>
+                    <motion.a 
+                      animate={{
+                        color: "#FFFFFF"
+                      }}
+                     whileHover={hoverStyle}
+                     whileFocus={hoverStyle}
+                     whileTap={hoverStyle}
+                    href="mailto:theonlysamir@gmail.com" title="Email" className={`fs-5 ${styles.link}`}>
                         <GoMailRead /> theonlysamir@gmail.com
-                    </a>
+                    </motion.a>
                     
                 </div>
 
                 <div title="Github Profile"  className="py-2">
                     
-                    <a href="https://www.github.com/thefakedeal" target="_blank" title="Github" className={`fs-5 ${styles.link}`}>
+                    <motion.a
+                      animate={{
+                        color: "#FFFFFF"
+                      }}
+                      whileHover={hoverStyle}
+                     whileFocus={hoverStyle}
+                     whileTap={hoverStyle}
+                    href="https://www.github.com/thefakedeal" target="_blank" title="Github" className={`fs-5 ${styles.link}`}>
                         <GoMarkGithub /> thefakedeal
-                    </a>
+                    </motion.a>
                 </div>
                 
                 <div title="LinkedIn Profile"   className="py-2">
                     
-                    <a href="https://www.linkedin.com/in/samir-shrestha-16050a210/" target="_blank" title="LinkedIn" className={`fs-5 ${styles.link}`}>
+                    <motion.a
+                      animate={{
+                        color: "#FFFFFF"
+                      }}
+                      whileHover={hoverStyle}
+                      whileFocus={hoverStyle}
+                      whileTap={hoverStyle}
+                    href="https://www.linkedin.com/in/samir-shrestha-16050a210/" target="_blank" title="LinkedIn" className={`fs-5 ${styles.link}`}>
                         <AiFillLinkedin /> Samir Shrestha
-                    </a>
+                    </motion.a>
                 </div>
 
                 <div title="LinkedIn Profile"  className="py-2">
                     
-                    <a href="https://www.instagram.com/thefakedeal" title="LinkedIn" target="_blank" className={`fs-5 ${styles.link}`}>
+                    <motion.a 
+                      animate={{
+                        color: "#FFFFFF"
+                      }}
+                      whileHover={hoverStyle}
+                     whileFocus={hoverStyle}
+                     whileTap={hoverStyle}
+                    href="https://www.instagram.com/thefakedeal" title="LinkedIn" target="_blank" className={`fs-5 ${styles.link}`}>
                         <AiFillInstagram /> thefakedeal
-                    </a>
+                    </motion.a>
                 </div>
                 </div>
           </section>
