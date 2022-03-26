@@ -72,13 +72,14 @@ export default function skills() {
         exit="leave"
         className="container d-flex flex-column align-items-center"
       >
+         
           <AnimatePresence initial={true}>
                 <motion.h1
                 variants={headerVariant}
                 >
                 My Skills
                 </motion.h1>
-          </AnimatePresence>
+          
           <div className="container p-4">
             <div className="row g-4">
                 {Array.apply(null, Array(12)).map(item=>(
@@ -91,6 +92,8 @@ export default function skills() {
                 ))}
             </div>
           </div>
+          </AnimatePresence >
+         
       </motion.section>
     </>
   );

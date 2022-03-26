@@ -25,6 +25,18 @@ const links = [
   },
 ];
 
+const hoverStyle={
+  color: ["#a228f5", "#ee1aca", "#ee1a1a"],
+  scale: 1.2,
+  transition: {
+      color:{
+        yoyo: Infinity,
+        duration: 2,
+        ease: "easeInOut",
+      }
+  },
+}
+
 export default function Navbar() {
   const [viewMenu, setViewMenu] = useState(false);
   
@@ -38,10 +50,9 @@ export default function Navbar() {
             <motion.li
               initial={{ color: "#FFFFFF" }}
               animate={{ color: "#FFFFFF" }}
-              whileHover={{
-                scale: 1.3,
-                color: "purple",
-              }}
+              whileHover={hoverStyle}
+              whileFocus={hoverStyle}
+              whileTap={hoverStyle}
               transition={{
                 type: "spring",
                 stiffness: 300,

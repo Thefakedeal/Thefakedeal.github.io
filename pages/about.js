@@ -1,6 +1,6 @@
 import React from "react";
 import Meta from "../components/Meta";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import styles from "../styles/About.module.css";
 import DisplayPicture from "../components/DisplayPicture";
 import {AiFillEye} from 'react-icons/ai'
@@ -26,14 +26,14 @@ const containerVariant = {
 };
 
 const buttonVariant = {
-    hover:{
-        scaleX:1.1,
-        backgroundColor: "#a228f5",
-        transition:{
-            duration:1.1,
-            yoyo: Infinity
-        }
+  visible: {
+    backgroundColor: ["#a228f5", "#ee1aca", "#ee1a1a"],
+    transition: {
+        yoyo: Infinity,
+        duration: 2,
+        ease: "easeInOut",
     },
+  },
   
 }
 
@@ -68,15 +68,21 @@ export default function about() {
               </p>
 
               <div >
+                <AnimatePresence initial={true}>
                 <motion.a
                 target="_blank"
                 href="/pdf/resume.pdf"
                 variants={buttonVariant}
-                  whileHover="hover"
+                  whileHover={{
+                    scaleX:1.1,
+                    
+                }}
                   title="Resume"
                 className={`btn btn-sm fs-6 ${styles.btn}`}>
                     <AiFillEye className="mx-2 fs-5"/>
-                    <span className="fw-bold">Check Out My Resume</span></motion.a>
+                    <span className="fw-bold">Check Out My Resume</span>
+                </motion.a>
+                </AnimatePresence>
               </div>
             </div>
           </div>

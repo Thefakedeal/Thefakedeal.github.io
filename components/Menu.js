@@ -35,6 +35,18 @@ const listItemVariant = {
   },
 };
 
+const hoverStyle={
+  color: ["#a228f5", "#ee1aca", "#ee1a1a"],
+  scale: 1.2,
+  transition: {
+      color:{
+        yoyo: Infinity,
+        duration: 2,
+        ease: "easeInOut",
+      }
+  },
+}
+
 export default function Menu({ links = [], handleClose }) {
   return (
     <Backdrop>
@@ -53,18 +65,10 @@ export default function Menu({ links = [], handleClose }) {
           {links.map((link) => (
             <motion.li
               variants={listItemVariant}
-              whileHover={{
-                scale: 1.3,
-                color: "purple",
-              }}
-              whileTap={{
-                scale: 1.3,
-                color: "purple",
-              }}
-              transition={{
-                type: "spring",
-                stiffness: 150,
-              }}
+              animate={{ color:"#FFFFFF" }}
+              whileHover={hoverStyle}
+              whileFocus={hoverStyle}
+              whileTap={hoverStyle}
               key={link.title}
             >
               <Link href={link.url}>
