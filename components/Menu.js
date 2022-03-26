@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 const listVariant = {
   hidden: {
     opacity: 0,
+   
   },
   show: {
     opacity: 1,
@@ -16,6 +17,7 @@ const listVariant = {
     },
   },
   leave: {
+    opacity:0,
     transition: {
       when: "afterChildren",
       staggerChildren: 0.2,

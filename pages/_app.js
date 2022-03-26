@@ -7,9 +7,8 @@ function MyApp({ Component, pageProps, router }) {
   return (
     <>
       <Navbar />
-      <AnimatePresence  initial={false}>
+      <AnimatePresence exitBeforeEnter >
           <Component {...pageProps} key={router.pathname}/>
-
       </AnimatePresence>
     </>
   )

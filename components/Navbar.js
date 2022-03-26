@@ -13,7 +13,7 @@ const links = [
   },
   {
     title: "Skills",
-    url: "/",
+    url: "/skills",
   },
   {
     title: "Contact",
