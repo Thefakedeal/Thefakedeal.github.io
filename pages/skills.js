@@ -23,7 +23,7 @@ const containerVariant = {
       type: "spring",
       dampness: 10,
       when: "afterChildren",
-      staggerChildren: 0.01,
+      staggerChildren: 0.1,
       staggerDirection:-1
     },
   },
