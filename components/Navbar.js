@@ -30,7 +30,8 @@ const hoverStyle={
   scale: 1.2,
   transition: {
       color:{
-        yoyo: Infinity,
+        repeat: Infinity,
+        repeatType:"mirror",
         duration: 2,
         ease: "easeInOut",
       }

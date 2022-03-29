@@ -1,5 +1,6 @@
 import Meta from "../components/Meta";
 import { AnimatePresence, motion } from "framer-motion";
+import ImgCard from "../components/ImgCard";
 
 const containerVariant = {
   hidden: {
@@ -11,7 +12,7 @@ const containerVariant = {
       duration: 0.5,
       type: "spring",
       when: "beforeChildren",
-      staggerChildren: 0.05,
+      staggerChildren: 0.2,
       
     },
   },
@@ -34,10 +35,11 @@ const headerVariant={
     },
     visible:{
         scale: 1,
-        color: ["#a228f5", "#ee1aca", "#ee1a1a"],
+        // color: ["#a228f5", "#ee1aca", "#ee1a1a"],
         transition:{
             color:{
-                yoyo: Infinity,
+                repeat: Infinity,
+                repeatType:"reverse",
                 duration: 2,
                 ease: "easeOut",
             }
@@ -49,15 +51,77 @@ const headerVariant={
 }
 
 
+const technologies = [
+  {
+    name: "Laravel",
+    image: "/img/tech/laravel.png"
+  },
+  {
+    name: "React",
+    image: "/img/tech/react.png"
+  },
+  {
+    name: "Vue JS",
+    image: "/img/tech/vue.webp"
+  },
+  {
+    name: "Express",
+    image: "/img/tech/express.png"
+  },
+  {
+    name: "React Native",
+    image: "/img/tech/react-native.png"
+  },
+  {
+    name: "Next JS",
+    image: "/img/tech/next.png"
+  },
+  {
+    name: "PHP",
+    image: "/img/tech/php.jpg"
+  },
+  {
+    name: "JavaScript",
+    image: "/img/tech/java-script.jpg"
+  },
+  {
+    name: "Python",
+    image: "/img/tech/python.png"
+  },
+  {
+    name: "Postgres",
+    image: "/img/tech/postgres.png"
+  },
+  {
+    name: "My SQL",
+    image: "/img/tech/mysql.png"
+  },
+  {
+    name: "MongoDB",
+    image: "/img/tech/mongodb.png"
+  },
+];
+
 const cardsVariant={
     hidden:{
         scale:0.1,
+        rotateZ: -180,
+    
     },
     visible:{
         scale: 1,
+        rotateZ: 0,
+     
+        transition:{
+          rotateZ:{
+            duration: 0.5,
+            type: "tween",
+          }
+        }
     },
     leave:{
-        scale:0.1
+        scale:0.1,
+        rotateZ: 360
     }
 }
 export default function skills() {
@@ -74,21 +138,24 @@ export default function skills() {
       >
          
           <AnimatePresence initial={true}>
-                <motion.h1
+                <motion.h1 className="text-white"
                 variants={headerVariant}
+                key={"Header"}
                 >
                 My Skills
                 </motion.h1>
           
           <div className="container p-4">
             <div className="row g-4">
-                {Array.apply(null, Array(12)).map(item=>(
-                    <motion.div 
-                        variants={cardsVariant}
-                    className="col-md-4 card bg-dark d-flex text-white
-                    ">
-                        <h1>Reaact</h1>
-                    </motion.div>
+                {technologies.map((tech,index)=>(
+
+                    <ImgCard 
+                      variants={cardsVariant}
+                      key={tech.name}
+                      img={tech.image}
+                      title={tech.name}
+                      className="col-md-4 text-white img-fluid"
+                    />
                 ))}
             </div>
           </div>

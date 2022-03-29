@@ -42,14 +42,15 @@ export default function Home() {
           >
             <div>
               <h1 className="text-white">
-                Hello I'm Samir Shrestha. <br />
-                I'm A Full Stack Web Developer!
+                Hello I&apos;m Samir Shrestha. <br />
+                I&apos;m A Full Stack Web Developer!
               </h1>
               <div className={styles.links}>
                 <a
                   title="Github Profile"
                   href="https://github.com/Thefakedeal"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <img
                     src="/img/ghub.png"
@@ -62,6 +63,7 @@ export default function Home() {
                   title="LinkedIn Profile"
                   href="https://www.linkedin.com/in/samir-shrestha-16050a210/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <img
                     src="/img/linkedin.png"

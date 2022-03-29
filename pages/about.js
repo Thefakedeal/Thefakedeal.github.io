@@ -29,7 +29,8 @@ const buttonVariant = {
   visible: {
     backgroundColor: ["#a228f5", "#ee1aca", "#ee1a1a"],
     transition: {
-        yoyo: Infinity,
+        repeat: Infinity,
+        repeatType:"mirror",
         duration: 2,
         ease: "easeInOut",
     },
@@ -71,6 +72,7 @@ export default function about() {
                 <AnimatePresence initial={true}>
                 <motion.a
                 target="_blank"
+                rel="noreferrer"
                 href="/pdf/resume.pdf"
                 variants={buttonVariant}
                   whileHover={{
