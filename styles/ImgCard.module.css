@@ -1,4 +1,4 @@
-@mixin aspect-ratio($width, $height) {
+/* @mixin aspect-ratio($width, $height) {
   position: relative;
   &:before {
     display: block;
@@ -13,12 +13,28 @@
     right: 0;
     bottom: 0;
   }
+} */
+
+.container::before{
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 60%;
 }
+
 
 .container {
   position: relative;
   overflow: hidden;
-  @include aspect-ratio(5, 3);
+  /* @include aspect-ratio(5, 3); */
+}
+
+.container > .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .image {

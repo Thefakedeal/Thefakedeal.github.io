@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
-import styles from "../styles/ImgCard.module.scss";
+import styles from "../styles/ImgCard.module.css";
 
 const textVariant = {
   hidden: {
@@ -29,9 +29,9 @@ export default function ImgCard({ img, title = "", ...props }) {
 
   return (
     <motion.div
+      {...props}
       onMouseEnter={open}
       onMouseLeave={close}
-      {...props}
       className={`${props.className} ${styles.container}`}
     >
       <motion.div className={styles.content}>
@@ -41,7 +41,7 @@ export default function ImgCard({ img, title = "", ...props }) {
           }}
           className={styles.image}
         ></motion.div>
-        <AnimatePresence>
+        <AnimatePresence exitBeforeEnter>
           {hover && (
             <motion.div
               variants={textVariant}
