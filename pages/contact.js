@@ -70,13 +70,13 @@ export default function contact() {
                     whileHover={hoverStyle}
                     whileFocus={hoverStyle}
                     whileTap={hoverStyle}
-                    href="mailto:theonlysamir@gmail.com"
+                    href="mailto:samir.shrestha.swe@gmail.com"
                     title="Email"
                     target="_blank"
                     rel="noreferrer"
                     className={`fs-5 ${styles.link}`}
                   >
-                    <GoMailRead /> theonlysamir@gmail.com
+                    <GoMailRead />  samir.shrestha.swe@gmail.com
                   </motion.a>
                 </div>
 
