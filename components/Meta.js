@@ -25,6 +25,7 @@ export default function Meta() {
         content="https://avatars.githubusercontent.com/thefakedeal"
       ></meta>
       <meta property="twitter:card" content="Website"></meta>
+      <meta name="google-site-verification" content="7nHwXVfgOuztEhf8cS17luzvTM7Ik2bp7F0wD3zbr4I" />
     </Head>
   );
 }
