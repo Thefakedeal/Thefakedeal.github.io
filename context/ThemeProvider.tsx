@@ -21,7 +21,7 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
     if (typeof window !== "undefined" && localStorage.getItem("theme")) {
       return localStorage.getItem("theme") as "light" | "dark";
     }
-    return (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? "dark" : "light";
+    return (typeof window !== "undefined" && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? "dark" : "light";
   };
 
   const [theme, setTheme] = useState<"light" | "dark">(getInitialTheme);

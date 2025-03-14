@@ -13,8 +13,9 @@ const { theme, toggleTheme } = useContext(ThemeContext)!;
     onClick={toggleTheme}
     className="rounded-full 
     transition-colors flex items-center
-    justify-center  opacity-60 hover:opacity-100
+    justify-center 
     font-medium text-sm  h-[100%] text-secondary hover:text-accent"
+    title={`Switch to ${theme === "dark" ? "Light" : "Dark"} mode`}
   >
     {theme === "dark" ? (
       <MoonIcon />
