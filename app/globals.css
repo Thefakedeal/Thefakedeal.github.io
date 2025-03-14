@@ -36,3 +36,15 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer base {
+  .glass {
+    @apply bg-primary/20 backdrop-blur-md backdrop-saturate-150 border border-primary/20 rounded-xl shadow-lg transition-all duration-300;
+  }
+
+  /* Hover effect */
+  .glass:hover {
+    @apply bg-primary/30 border-primary/30;
+  }
+
+}
