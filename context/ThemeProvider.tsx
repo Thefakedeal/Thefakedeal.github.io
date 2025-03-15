@@ -1,5 +1,5 @@
 "use client";
-import { createContext, useState, useEffect, ReactNode } from "react";
+import { createContext, useState, useEffect, ReactNode, useLayoutEffect } from "react";
 
 // Define the type for the context value
 interface ThemeContextType {
@@ -21,14 +21,21 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
     if (typeof window !== "undefined" && localStorage.getItem("theme")) {
       return localStorage.getItem("theme") as "light" | "dark";
     }
-    return (typeof window !== "undefined" && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? "dark" : "light";
+    return (typeof window != "undefined" && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? "dark" : "light";
   };
 
-  const [theme, setTheme] = useState<"light" | "dark">(getInitialTheme);
+  const [theme, setTheme] = useState<"light" | "dark" | null>(null);
 
   useEffect(() => {
-    document.documentElement.setAttribute("data-theme", theme);
-    localStorage.setItem("theme", theme);
+    const initialTheme = getInitialTheme();
+    setTheme(initialTheme);
+  }, []);
+
+  useEffect(() => {
+    if(theme){
+      document.documentElement.setAttribute("data-theme", theme);
+      localStorage.setItem("theme", theme);
+    }
   }, [theme]);
 
   const toggleTheme = () => {

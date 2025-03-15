@@ -1,22 +1,21 @@
 @import "tailwindcss";
 
 :root {
-  /* Light Mode - Open Grassy Fields */
-  --background: #F5F9EB; /* Softer, less saturated grassy green */
-  --foreground: #2B2A1D; /* Earthy brown for text (good contrast) */
-  --primary: #2D4A1E; /* Deep, natural green */
-  --secondary: #5A7358; /* Muted, natural green */
-  --accent: #A07C3B; /* Softer warm brown */
+  /* Light Mode - Readable, Nature-Inspired */
+  --background: #FAF8F2; /* Soft off-white with a hint of warmth */
+  --foreground: #2B2A1D; /* Deep earthy brown for text */
+  --primary: #4CAF50; /* Rich, deep green for buttons & accents */
+  --secondary: #8BAA78; /* Muted sage green for a natural feel */
+  --accent: #C89F5D; /* Warm golden-brown for highlights */
 
-  /* Light Mode Gradient - Subtle Sunlight */
+  /* Subtle Sunlight Gradient */
   --gradient: linear-gradient(
     135deg, 
-    #FAF3E0 5%,  /* Warm, soft morning light */
-    #F5F9EB 40%, /* Gentle greenish-white */
-    #D9EBC5 100% /* Muted pastel green */
+    #FDF8E4 5%,  /* Gentle morning sunlight */
+    #FAF8F2 50%, /* Soft warm off-white */
+    #E3E9D5 100% /* Muted greenish tint */
   );
 }
-
 
 
 [data-theme="dark"] {
@@ -35,6 +34,24 @@
     #121A14 100% /* Deep forest tone */
   );
 }
+
+/* Prefers Dark Mode and data-theme  is not set */
+:not([data-theme="light"]) {
+  @media (prefers-color-scheme: dark) {
+    --background: #121A14; /* Deep forest green */
+    --foreground: #EAE6DA; /* Soft off-white */
+    --primary: #4A6F52; /* Muted forest green */
+    --secondary: #89A67C; /* Misty green */
+    --accent: #C4A46D; /* Soft golden glow */
+    --gradient: linear-gradient(
+      135deg, 
+      #BFA372 5%, /* Soft moon glow */
+      #2A3F2B 40%, /* Dark muted green */
+      #121A14 100% /* Deep forest tone */
+    );
+  }
+}
+
 
 @theme {
   --color-background: var(--background);

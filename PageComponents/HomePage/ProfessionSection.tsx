@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 type Props = {}
 
 export default function ProfessionSection({}: Props) {
-  const professions = ["Sofware Developer", "Web Developer", "Freelancer","SWE Consultant" ];
+  const professions = ["Sofware Developer", "Web Developer", "Freelancer","Software Development Consultant" ];
   const [professionIndex, setProfessionIndex] = useState(0);
   useEffect(() => {
     const interval = setInterval(() => {
@@ -22,7 +22,7 @@ export default function ProfessionSection({}: Props) {
         animate={{ y: 0, opacity: 1}}
         exit={{  y: -20, opacity: 0}}
         transition={{ duration: 1,  }}
-        className='text-accent'
+        className='text-primary border-1 border-accent block w-fit px-1'
         >
         {professions[professionIndex]}
         </motion.span>
