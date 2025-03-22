@@ -2,11 +2,11 @@
 
 :root {
   /* Light Mode - Readable, Nature-Inspired */
-  --background: #FAF8F2; /* Soft off-white with a hint of warmth */
-  --foreground: #2B2A1D; /* Deep earthy brown for text */
-  --primary: #4CAF50; /* Rich, deep green for buttons & accents */
-  --secondary: #8BAA78; /* Muted sage green for a natural feel */
-  --accent: #C89F5D; /* Warm golden-brown for highlights */
+  --background: #E0FFFF; /* Soft off-white with a hint of warmth */
+  --foreground: #1C1C1C; /* Deep earthy brown for text */
+  --primary: #2C6B2F; /* Rich, deep green for buttons & accents */
+  --secondary: #3E8E41; /* Muted sage green for a natural feel */
+  --accent: #6B2F2F; /* Warm golden-brown for highlights */
 
   /* Subtle Sunlight Gradient */
   --gradient: linear-gradient(
@@ -20,11 +20,11 @@
 
 [data-theme="dark"] {
   /* Dark Mode - Deep Forest at Night */
-  --background: #121A14; /* Deep forest green */
-  --foreground: #EAE6DA; /* Soft off-white */
-  --primary: #4A6F52; /* Muted forest green */
-  --secondary: #89A67C; /* Misty green */
-  --accent: #C4A46D; /* Soft golden glow */
+  --background: #010B13; /* Deep forest green */
+  --foreground: #F0F8FF; /* Soft off-white */
+  --primary: #2C6B2F; /* Muted forest green */
+  --secondary: #4F9F69; /* Misty green */
+  --accent: #D27D2F; /* Soft golden glow */
 
   /* Dark Mode Gradient - Subtle Moonlight */
   --gradient: linear-gradient(
@@ -38,11 +38,11 @@
 /* Prefers Dark Mode and data-theme  is not set */
 :not([data-theme="light"]) {
   @media (prefers-color-scheme: dark) {
-    --background: #121A14; /* Deep forest green */
-    --foreground: #EAE6DA; /* Soft off-white */
-    --primary: #4A6F52; /* Muted forest green */
-    --secondary: #89A67C; /* Misty green */
-    --accent: #C4A46D; /* Soft golden glow */
+    --background: #010B13; /* Deep forest green */
+    --foreground: #F0F8FF; /* Soft off-white */
+    --primary: #2C6B2F; /* Muted forest green */
+    --secondary: #4F9F69; /* Misty green */
+    --accent: #D27D2F; /* Soft golden glow */
     --gradient: linear-gradient(
       135deg, 
       #BFA372 5%, /* Soft moon glow */
@@ -70,41 +70,52 @@ body {
   /* background: var(--gradient) no-repeat center center fixed; */
 }
 
-/* Create Font Sizes */
+/* Default typography styles */
 h1 {
-  @apply text-4xl;
-}
-h2 {
-  @apply text-3xl;
-}
-h3 {
-  @apply text-2xl;
-}
-h4 {
-  @apply text-xl;
-}
-h5 {
-  @apply text-lg;
-}
-h6 {
-  @apply text-base;
-}
-p{
-  @apply text-sm;
-}
-b{
-  @apply font-bold;
+  @apply text-5xl font-bold leading-tight md:text-6xl;
 }
 
+h2 {
+  @apply text-4xl font-semibold leading-snug md:text-5xl;
+}
+
+h3 {
+  @apply text-3xl font-medium leading-snug md:text-4xl;
+}
+
+h4 {
+  @apply text-2xl font-medium leading-normal md:text-3xl;
+}
+
+h5 {
+  @apply text-xl font-medium leading-normal md:text-2xl;
+}
+
+h6 {
+  @apply text-lg font-medium leading-relaxed md:text-xl;
+}
+
+/* Paragraphs and text */
+p {
+  @apply text-base leading-relaxed md:text-lg;
+}
+
+small {
+  @apply text-sm md:text-base;
+}
+
+b{
+  @apply font-semibold;
+}
 
 @layer base {
   .glass {
-    @apply bg-primary/10 backdrop-blur-md backdrop-saturate-150 border border-primary/20 rounded-xl shadow-lg transition-all duration-300;
+    @apply bg-primary/0 backdrop-blur-md backdrop-saturate-150 border border-primary/20 rounded-xl shadow-lg transition-all duration-300;
   }
 
   /* Hover effect */
   .glass:hover {
-    @apply bg-primary/15 border-primary/30;
+    @apply bg-primary/5 border-accent/30;
   }
 
 }
