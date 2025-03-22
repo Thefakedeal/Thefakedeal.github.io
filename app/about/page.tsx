@@ -1,3 +1,4 @@
+import Landing from "@/PageComponents/AboutPage/Landing";
 import type { Metadata } from "next";
 
 
@@ -10,6 +11,8 @@ type Props = {}
 
 export default function About({}: Props) {
   return (
-    <div></div>
+    <main className="w-screen flex flex-col items-center">
+      <Landing />
+    </main>
   )
 }
