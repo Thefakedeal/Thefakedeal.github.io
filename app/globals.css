@@ -70,34 +70,35 @@ body {
   /* background: var(--gradient) no-repeat center center fixed; */
 }
 
+
 /* Default typography styles */
 h1 {
-  @apply text-5xl font-bold leading-tight md:text-6xl;
+  @apply text-4xl font-bold leading-tight ;
 }
 
 h2 {
-  @apply text-4xl font-semibold leading-snug md:text-5xl;
+  @apply text-3xl font-semibold leading-snug ;
 }
 
 h3 {
-  @apply text-3xl font-medium leading-snug md:text-4xl;
+  @apply text-2xl font-medium leading-snug ;
 }
 
 h4 {
-  @apply text-2xl font-medium leading-normal md:text-3xl;
+  @apply text-xl font-medium leading-normal;
 }
 
 h5 {
-  @apply text-xl font-medium leading-normal md:text-2xl;
+  @apply text-lg font-medium leading-normal ;
 }
 
 h6 {
-  @apply text-lg font-medium leading-relaxed md:text-xl;
+  @apply text-base font-medium leading-relaxed;
 }
 
 /* Paragraphs and text */
 p {
-  @apply text-base leading-relaxed md:text-lg;
+  @apply text-base leading-relaxed;
 }
 
 small {

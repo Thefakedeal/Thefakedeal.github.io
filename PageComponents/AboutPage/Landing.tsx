@@ -3,22 +3,16 @@ type Props = {}
 
 export default function Landing({}: Props) {
   return (
-    <div
-        className="glass w-full md:w-3/4 p-4 mb-5 flex flex-col gap-2 min-h-[80vh]"
+    <section
+    className="my-5 flex flex-col gap-2"
     >
-        <h1>About Me</h1>
-        <h2>
+        <h1>
             Hey, I'm Samir Shrestha!
-        </h2>
+        </h1>
         <p>
-            I'm a software developer with around 5 years of experience in Laravel, React, Next.js, Vue.js, and AWS. I love building scalable web applications that balance performance, usability, and clean design.
+        I'm a software developer with experience in modern web technologies, specializing in backend development with Laravel and full-stack projects using Vue.js, React, and Next.js. I've built and optimized e-commerce platforms, booking systems, and management tools, integrating scalable APIs and third-party services like AWS and payment gateways. Passionate about building efficient, user-friendly solutions, I continuously explore new technologies to enhance performance and user experience.
         </p>
-        <p>
-            I'm also passionate about fitness coaching, specializing in strength training and fat loss. With over 6 years of experience and 30-40 clients coached, I help people get stronger, fitter, and healthier with practical, science-backed training methods.
-        </p>
-        <p>
-            🚀 Looking to collaborate? Let’s connect!
-        </p>
-    </div>
+        
+    </section>
   )
 }
