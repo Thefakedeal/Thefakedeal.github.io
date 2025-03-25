@@ -1,9 +1,8 @@
 import Link from "next/link"
 
 
-type Props = {}
 
-export default function Footer({}: Props) {
+export default function Footer() {
   return (
     <footer className=" flex justify-center pt-5 pb-2">
         <section className="glass w-full md:w-3/4 p-4 mb-5 flex flex-wrap gap-2 text-small justify-center align-center text-sm text-text/60">

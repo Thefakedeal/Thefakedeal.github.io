@@ -2,8 +2,8 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-type Props = {}
-export default function ExpandMenu({}: Props) {
+
+export default function ExpandMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (

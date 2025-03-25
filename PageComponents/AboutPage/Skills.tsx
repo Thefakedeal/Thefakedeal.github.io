@@ -1,7 +1,5 @@
 
-type Props = {}
-
-export default function Skills({}: Props) {
+export default function Skills() {
 
   const skills = [
       "Laravel", "Vue", "React", "Next JS", "PHP", "MySQL", "Tailwind", "Bootstrap", "Git", "Figma", "Express JS", "Python", "Node JS"

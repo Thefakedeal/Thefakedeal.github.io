@@ -1,9 +1,8 @@
 import ActiveLink from "./ActiveLink"
 import { AboutIcon, BlogIcon, HomeIcon, ToolIcon } from "./Icons"
 import { SwitchTheme } from "./SwitchTheme"
-type Props = {}
 
-export default function NavBar({}: Props) {
+export default function NavBar() {
 
   const links = [
     {

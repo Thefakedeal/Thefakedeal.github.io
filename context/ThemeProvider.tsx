@@ -3,7 +3,7 @@ import { createContext, useState, useEffect, ReactNode, useLayoutEffect } from "
 
 // Define the type for the context value
 interface ThemeContextType {
-  theme: "light" | "dark";
+  theme: "light" | "dark" | null;
   toggleTheme: () => void;
 }
 
