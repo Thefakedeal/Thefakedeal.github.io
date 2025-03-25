@@ -16,16 +16,16 @@ export default function NavBar({}: Props) {
       href: "/about",
       icon: <AboutIcon />,
     },
-    {
-      title: "Blogs",
-      href: "/blogs",
-      icon: <BlogIcon />,
-    },
-    {
-      title: "Tools",
-      href: "/tools",
-      icon: <ToolIcon />
-    },
+    // {
+    //   title: "Blogs",
+    //   href: "/blogs",
+    //   icon: <BlogIcon />,
+    // },
+    // {
+    //   title: "Tools",
+    //   href: "/tools",
+    //   icon: <ToolIcon />
+    // },
   ]
 
   return (
