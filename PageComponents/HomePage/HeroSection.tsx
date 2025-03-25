@@ -2,9 +2,9 @@ import Link from "next/link"
 import ProfessionSection from "./ProfessionSection"
 import { EyeIcon, GithubIcon, LinkedInIcon, MailIcon } from "@/Component/Icons"
 import Avatar from "./Avatar"
-type Props = {}
 
-export default function HeroSection({}: Props) {
+
+export default function HeroSection() {
   return (
     <section
     className="glass w-full md:w-3/4 p-4 mb-5 flex justify-between gap-5 flex-col-reverse md:flex-row min-h-[80vh]">

@@ -1,8 +1,7 @@
 import React from 'react'
 
-type Props = {}
 
-export const SunIcon = ({ }: Props) => (
+export const SunIcon = () => (
   <svg height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M18 12C18 15.3137 15.3137 18 12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12Z" fill="currentColor" />
     <path fillRule="evenodd" clipRule="evenodd" d="M12 1.25C12.4142 1.25 12.75 1.58579 12.75 2V3C12.75 3.41421 12.4142 3.75 12 3.75C11.5858 3.75 11.25 3.41421 11.25 3V2C11.25 1.58579 11.5858 1.25 12 1.25ZM1.25 12C1.25 11.5858 1.58579 11.25 2 11.25H3C3.41421 11.25 3.75 11.5858 3.75 12C3.75 12.4142 3.41421 12.75 3 12.75H2C1.58579 12.75 1.25 12.4142 1.25 12ZM20.25 12C20.25 11.5858 20.5858 11.25 21 11.25H22C22.4142 11.25 22.75 11.5858 22.75 12C22.75 12.4142 22.4142 12.75 22 12.75H21C20.5858 12.75 20.25 12.4142 20.25 12ZM12 20.25C12.4142 20.25 12.75 20.5858 12.75 21V22C12.75 22.4142 12.4142 22.75 12 22.75C11.5858 22.75 11.25 22.4142 11.25 22V21C11.25 20.5858 11.5858 20.25 12 20.25Z" fill="currentColor" />
@@ -15,14 +14,14 @@ export const SunIcon = ({ }: Props) => (
   </svg>
 )
 
-export const MoonIcon = ({ }: Props) => (
+export const MoonIcon = () => (
   <svg height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 8.00002C0 4.75562 1.93132 1.9623 4.70701 0.707031L5.65436 1.65438C5.2352 2.51383 5 3.47946 5 4.50002C5 8.08987 7.91015 11 11.5 11C12.5206 11 13.4862 10.7648 14.3456 10.3457L15.293 11.293C14.0377 14.0687 11.2444 16 8 16C3.58172 16 0 12.4183 0 8.00002Z" fill="currentColor" />
     <path d="M11.5 7.00003L9 4.50003L11.5 2.00003L14 4.50003L11.5 7.00003Z" fill="currentColor" />
   </svg>
 )
 
-export const LinkedInIcon = ({ }: Props) => (
+export const LinkedInIcon = () => (
   <svg height={"100%"} viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
     <g id="SVGRepo_iconCarrier"> <path d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z" fill="currentColor">
@@ -31,7 +30,7 @@ export const LinkedInIcon = ({ }: Props) => (
   </svg>
 );
 
-export const GithubIcon = ({ }: Props) => (
+export const GithubIcon = () => (
   <svg height={"100%"} viewBox="-2 -2 24.00 24.00" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
     <g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
     <g id="SVGRepo_iconCarrier">  <defs> </defs>
@@ -39,7 +38,7 @@ export const GithubIcon = ({ }: Props) => (
         <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="currentColor"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"> </path> </g> </g> </g> </g></svg>
 );
 
-export const MailIcon = ({ }: Props) => (
+export const MailIcon = () => (
   <svg height={"100%"} viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
     <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
@@ -48,7 +47,7 @@ export const MailIcon = ({ }: Props) => (
   </svg>
 );
 
-export const EyeIcon = ({ }: Props) => (
+export const EyeIcon = () => (
   <svg height={"100%"} fill="currentColor" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
     <g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier">
       <path d="M0 16q0.064 0.128 0.16 0.352t0.48 0.928 0.832 1.344 1.248 1.536 1.664 1.696 2.144 1.568 2.624 1.344 3.136 0.896 3.712 0.352 3.712-0.352 3.168-0.928 2.592-1.312 2.144-1.6 1.664-1.632 1.248-1.6 0.832-1.312 0.48-0.928l0.16-0.352q-0.032-0.128-0.16-0.352t-0.48-0.896-0.832-1.344-1.248-1.568-1.664-1.664-2.144-1.568-2.624-1.344-3.136-0.896-3.712-0.352-3.712 0.352-3.168 0.896-2.592 1.344-2.144 1.568-1.664 1.664-1.248 1.568-0.832 1.344-0.48 0.928zM10.016 16q0-2.464 1.728-4.224t4.256-1.76 4.256 1.76 1.76 4.224-1.76 4.256-4.256 1.76-4.256-1.76-1.728-4.256zM12 16q0 1.664 1.184 2.848t2.816 1.152 2.816-1.152 1.184-2.848-1.184-2.816-2.816-1.184-2.816 1.184l2.816 2.816h-4z"></path>
@@ -57,7 +56,7 @@ export const EyeIcon = ({ }: Props) => (
 );
 
 
-export const HomeIcon = ({ }: Props) => (
+export const HomeIcon = () => (
   <svg height={"16"} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 
     <g id="SVGRepo_bgCarrier" strokeWidth="0" />
@@ -69,7 +68,7 @@ export const HomeIcon = ({ }: Props) => (
   </svg>
 );
 
-export const AboutIcon = ({ }: Props) => (
+export const AboutIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16">
   <circle cx="8" cy="4" r="3" stroke="currentColor" strokeWidth="1" fill="none"/>
   <rect x="3" y="7" width="10" height="8" stroke="currentColor" strokeWidth="1" fill="none"/>
@@ -77,7 +76,7 @@ export const AboutIcon = ({ }: Props) => (
 
 );
 
-export const BlogIcon = ({ }: Props) => (
+export const BlogIcon = () => (
   <svg
   version="1.1"
   id="_x32_"
@@ -98,7 +97,7 @@ export const BlogIcon = ({ }: Props) => (
 </svg>
 );
 
-export const ToolIcon = ({ }: Props) => (
+export const ToolIcon = () => (
   <svg
       fill="currentColor"
       viewBox="0 0 16 16"

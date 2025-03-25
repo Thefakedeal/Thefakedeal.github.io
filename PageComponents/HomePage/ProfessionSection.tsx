@@ -3,9 +3,8 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 
 
-type Props = {}
 
-export default function ProfessionSection({}: Props) {
+export default function ProfessionSection() {
   const professions = ["Sofware Developer", "Web Developer", "Freelancer","Software Development Consultant" ];
   const [professionIndex, setProfessionIndex] = useState(0);
   useEffect(() => {

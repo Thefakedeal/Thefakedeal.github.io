@@ -1,9 +1,8 @@
-import { s } from 'framer-motion/client'
+
 import React from 'react'
 
-type Props = {}
 
-const Timeline = (props: Props) => {
+const Timeline = () => {
     const events = [
         {
             title: "Graduated from Tribhuvan University",
