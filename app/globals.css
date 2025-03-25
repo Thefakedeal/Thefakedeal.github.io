@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+:root {
+  /* Light Mode - Readable, Nature-Inspired */
+  --background: #E0FFFF; /* Soft off-white with a hint of warmth */
+  --foreground: #1C1C1C; /* Deep earthy brown for text */
+  --primary: #2C6B2F; /* Rich, deep green for buttons & accents */
+  --secondary: #3E8E41; /* Muted sage green for a natural feel */
+  --accent: #6B2F2F; /* Warm golden-brown for highlights */
+
+  /* Subtle Sunlight Gradient */
+  --gradient: linear-gradient(
+    135deg, 
+    #FDF8E4 5%,  /* Gentle morning sunlight */
+    #FAF8F2 50%, /* Soft warm off-white */
+    #E3E9D5 100% /* Muted greenish tint */
+  );
+}
+
+
+[data-theme="dark"] {
+  /* Dark Mode - Deep Forest at Night */
+  --background: #010B13; /* Deep forest green */
+  --foreground: #F0F8FF; /* Soft off-white */
+  --primary: #2C6B2F; /* Muted forest green */
+  --secondary: #4F9F69; /* Misty green */
+  --accent: #D27D2F; /* Soft golden glow */
+
+  /* Dark Mode Gradient - Subtle Moonlight */
+  --gradient: linear-gradient(
+    135deg, 
+    #BFA372 5%, /* Soft moon glow */
+    #2A3F2B 40%, /* Dark muted green */
+    #121A14 100% /* Deep forest tone */
+  );
+}
+
+/* Prefers Dark Mode and data-theme  is not set */
+:not([data-theme="light"]) {
+  @media (prefers-color-scheme: dark) {
+    --background: #010B13; /* Deep forest green */
+    --foreground: #F0F8FF; /* Soft off-white */
+    --primary: #2C6B2F; /* Muted forest green */
+    --secondary: #4F9F69; /* Misty green */
+    --accent: #D27D2F; /* Soft golden glow */
+    --gradient: linear-gradient(
+      135deg, 
+      #BFA372 5%, /* Soft moon glow */
+      #2A3F2B 40%, /* Dark muted green */
+      #121A14 100% /* Deep forest tone */
+    );
+  }
+}
+
+
+@theme {
+  --color-background: var(--background);
+  --color-text: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-gradient: var(--gradient);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /* background: var(--gradient) no-repeat center center fixed; */
+}
+
+
+/* Default typography styles */
+h1 {
+  @apply text-4xl font-bold leading-tight ;
+}
+
+h2 {
+  @apply text-3xl font-semibold leading-snug ;
+}
+
+h3 {
+  @apply text-2xl font-medium leading-snug ;
+}
+
+h4 {
+  @apply text-xl font-medium leading-normal;
+}
+
+h5 {
+  @apply text-lg font-medium leading-normal ;
+}
+
+h6 {
+  @apply text-base font-medium leading-relaxed;
+}
+
+/* Paragraphs and text */
+p {
+  @apply text-base leading-relaxed;
+}
+
+small {
+  @apply text-sm md:text-base;
+}
+
+b{
+  @apply font-semibold;
+}
+
+@layer base {
+  .glass {
+    @apply bg-primary/0 backdrop-blur-md backdrop-saturate-150 border border-primary/20 rounded-xl shadow-lg transition-all duration-300;
+  }
+
+  /* Hover effect */
+  .glass:hover {
+    @apply bg-primary/5 border-accent/30;
+  }
+
+}
