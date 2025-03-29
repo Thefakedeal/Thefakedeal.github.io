@@ -9,9 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "date-fns": "^4.1.0",
     "framer-motion": "^12.5.0",
     "gray-matter": "^4.0.3",
-    "next": "15.2.2",
+    "next": "^15.2.4",
     "next-mdx-remote": "^5.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
