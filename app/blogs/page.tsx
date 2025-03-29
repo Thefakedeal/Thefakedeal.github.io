@@ -5,8 +5,42 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Samir Shrestha | Blogs",
-  description: "Read Samir Shrestha's Blogs about Web Development, Technology, Fitness, Lifestyle and more.",
+  description: "Explore insightful blogs on web development, software engineering, and fitness by Samir Shrestha. Learn about Laravel, React, Next.js, performance optimization, strength training, and high-protein meal planning.",  
+  openGraph: {
+    title: "Samir Shrestha | Blogs",
+    siteName: "samirshrestha.info.np",
+    type: "website",
+    description:"Explore insightful blogs on web development, software engineering, and fitness by Samir Shrestha. Learn about Laravel, React, Next.js, performance optimization, strength training, and high-protein meal planning.",  
+    images: [
+        {
+            url: "https://samirshrestha.info.np/images/avatar.webp"
+        },
+    ],
+    },
+
+    twitter: {
+        title: "Samir Shrestha | Blogs",
+        description: "Explore insightful blogs on web development, software engineering, and fitness by Samir Shrestha. Learn about Laravel, React, Next.js, performance optimization, strength training, and high-protein meal planning.",  
+        card: "summary_large_image",
+        site: "samirshrestha.info.np",
+        images: [
+          {
+              url: "https://samirshrestha.info.np/images.avatar.webp"
+          },
+        ],
+    },
+
+    robots: {
+        index: true,
+        follow: true,
+        nocache: true,
+        googleBot: {
+            index: true,
+            follow: true,
+        },
+},
 };
+
 
 export default async function page() {
   const posts = getPosts();
