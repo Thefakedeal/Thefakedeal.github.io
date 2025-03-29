@@ -10,12 +10,12 @@ type Props = {
 }
 
 const components = {
-  p : (props: any) => <p className='text-text my-2'>{props.children}</p>,
+  p : (props: any) => <p className='text-text my-1'>{props.children}</p>,
   a : (props:{children: string, href: string}) => <Link href={props.href} className='text-accent font-bold'>{props.children}</Link>,
-  img: (props:{src: string, alt: string}) => <Image 
+  img: (props:{src: string, alt: string}) => (<Image 
    src={props.src} alt={props.alt} className='w-full p-1'
    width={400} height={300}
-   />
+   />),
 }
 
 export const BlogMD =  ({content}: Props) => {
