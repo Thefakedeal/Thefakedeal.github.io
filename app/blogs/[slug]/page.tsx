@@ -3,6 +3,7 @@ import { BlogMD } from '@/PageComponents/BlogPage/BlogMD'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import { formatDistance} from 'date-fns'
+import ShareLinks from '@/PageComponents/BlogPage/ShareLinks'
 
 type Props = {
     params: Promise<{
@@ -30,7 +31,9 @@ async function page({params}: Props) {
               />
             )
           }
+          <ShareLinks  title={data.title} tags={data.tags} />
           <BlogMD content={content} />
+          <ShareLinks  title={data.title} tags={data.tags} />
         </article>
     </main>
   )

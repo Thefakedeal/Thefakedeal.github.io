@@ -39,8 +39,9 @@ export  function getPostBySlug(slug:string) {
     return { data:{
         title: data.title,
         image: data.image,
-        description: data.description,
+        description: data.description || "",
         date: data.date,
         category: data.category,
+        tags: data.tags||[],
     }, content};
   }
