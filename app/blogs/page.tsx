@@ -1,5 +1,12 @@
 import { getPosts } from "@/helper/blog"
 import BlogCard from "@/PageComponents/BlogPage/BlogCard";
+import { Metadata } from "next";
+
+
+export const metadata: Metadata = {
+  title: "Samir Shrestha | Blogs",
+  description: "Read Samir Shrestha's Blogs about Web Development, Technology, Fitness, Lifestyle and more.",
+};
 
 export default async function page() {
   const posts = getPosts();
