@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react";
-import { FacebookShareButton, FacebookIcon, TwitterShareButton, TwitterIcon, RedditShareButton, RedditIcon, LinkedinShareButton, LinkedinIcon } from "react-share"
+import { FacebookShareButton, FacebookIcon, TwitterShareButton, TwitterIcon, LinkedinShareButton, LinkedinIcon } from "react-share"
 
 
 type Props = {
@@ -10,7 +10,8 @@ type Props = {
 }
 
 export default function ShareLinks({tags=[], title}: Props) {
-  const [url, setUrl] = useState(document.location.href);
+  const [url, setUrl] = useState(`${document.location.href}/`);
+
   const hashTags = tags.map(tag=> `#${tag}`).join(' ')
   return (
     <div className="flex gap-2" id="share-links">
@@ -20,9 +21,6 @@ export default function ShareLinks({tags=[], title}: Props) {
         <TwitterShareButton url={url} title={title} >
             <TwitterIcon size={32} round />
         </TwitterShareButton>
-        <RedditShareButton url={url} title={title} >
-            <RedditIcon size={32} round />
-        </RedditShareButton>
         <LinkedinShareButton url={url} title={title} source={url} >
             <LinkedinIcon size={32} round />
         </LinkedinShareButton>
