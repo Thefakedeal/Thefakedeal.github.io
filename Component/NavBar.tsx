@@ -15,11 +15,11 @@ export default function NavBar() {
       href: "/about",
       icon: <AboutIcon />,
     },
-    // {
-    //   title: "Blogs",
-    //   href: "/blogs",
-    //   icon: <BlogIcon />,
-    // },
+    {
+      title: "Blogs",
+      href: "/blogs",
+      icon: <BlogIcon />,
+    },
     // {
     //   title: "Tools",
     //   href: "/tools",

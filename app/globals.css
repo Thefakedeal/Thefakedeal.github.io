@@ -73,27 +73,27 @@ body {
 
 /* Default typography styles */
 h1 {
-  @apply text-4xl font-bold leading-tight ;
+  @apply text-4xl font-bold leading-tight py-2 ;
 }
 
 h2 {
-  @apply text-3xl font-semibold leading-snug ;
+  @apply text-3xl font-semibold leading-snug py-2;
 }
 
 h3 {
-  @apply text-2xl font-medium leading-snug ;
+  @apply text-2xl font-bold leading-snug py-2;
 }
 
 h4 {
-  @apply text-xl font-medium leading-normal;
+  @apply text-xl font-medium leading-normal py-1;
 }
 
 h5 {
-  @apply text-lg font-medium leading-normal ;
+  @apply text-lg font-medium leading-normal py-1;
 }
 
 h6 {
-  @apply text-base font-medium leading-relaxed;
+  @apply text-base font-medium leading-relaxed py-1;
 }
 
 /* Paragraphs and text */
@@ -119,4 +119,8 @@ b{
     @apply bg-primary/5 border-accent/30;
   }
 
+}
+
+html{
+  scroll-behavior: smooth;
 }
