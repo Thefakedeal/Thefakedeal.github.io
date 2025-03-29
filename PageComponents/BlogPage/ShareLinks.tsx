@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FacebookShareButton, FacebookIcon, TwitterShareButton, TwitterIcon, LinkedinShareButton, LinkedinIcon } from "react-share"
 
 
@@ -10,8 +10,11 @@ type Props = {
 }
 
 export default function ShareLinks({tags=[], title}: Props) {
-  const [url, setUrl] = useState(`${document.location.href}/`);
+  const [url, setUrl] = useState("");
 
+  useEffect(() => {
+    setUrl(window.location.href);  
+  },[])
   const hashTags = tags.map(tag=> `#${tag}`).join(' ')
   return (
     <div className="flex gap-2" id="share-links">
