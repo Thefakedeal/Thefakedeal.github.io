@@ -23,7 +23,8 @@ export async function generateMetadata({ params }: Props) {
   return {
       title:title,
       description: post.data.description,
-      
+      keywords: post.data.tags.join(', '),
+
       openGraph: {
           title: title,
           siteName: "samirshrestha.info.np",
