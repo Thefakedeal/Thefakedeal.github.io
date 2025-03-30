@@ -22,9 +22,9 @@ const BlogCard = (props: Props) => {
             </Link>
             </div>
             <div className="p-5">
-                <a href="#">
-                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-text">{props.blog.title}</h5>
-                </a>
+                <h3 className="mb-2 text-2xl font-bold 
+                line-clamp-2 h-20
+                tracking-tight text-text">{props.blog.title}</h3>
                 <p className="mb-3 text-sm text-text/90 line-clamp-2 overflow-ellipsis">
                     {props.blog.description}
                 </p>
