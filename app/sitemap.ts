@@ -19,7 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: 'https://samirshrestha.info.np/blogs',
       lastModified: new Date(),
       changeFrequency: 'daily',
-      priority: 0.9,
+      priority: 1,
     },
   ];
   const posts = getPosts();
