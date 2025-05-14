@@ -19,9 +19,15 @@ const Timeline = () => {
         },
         {
             title: "Worked as a Software Developer at Mandala Tech",
-            date: "August 2022 - Present",
+            date: "August 2022 - April 2025",
             description: "Developed migration scripts to seamlessly transfer data between system versions. Built a fully functional API for an e-commerce application using Laravel and related technologies. Enhanced the dashboard UI with Laravel Nova and Vue.js, improving user experience. Integrated AWS SES for email notifications with AWS SNS and worked with Elasticsearch for optimized search functionality. Additionally, developed a complete e-commerce website for books using React, Next.js, and related technologies. Implemented multiple payment gateways, including eSewa, Khalti, Fonepay, Connect IPS, and Stripe, ensuring smooth transactions.",
             site: "https://mandalatech.io/"
+        },
+        {
+            title: "Studying at Fanshawe College",
+            date: "May 2025 - Present",
+            description: "Currently studying a Graduate Certificate course AI & Machine Learning, learning about data analysis, AI, data science and machine learning at Fanshawe College, Canada.",
+            site: "https://www.fanshawec.ca/"
         }
     ]
 
