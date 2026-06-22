@@ -11,9 +11,9 @@
   "dependencies": {
     "date-fns": "^4.1.0",
     "framer-motion": "^12.5.0",
-    "gray-matter": "^4.0.3",
-    "next": "15.2.8",
-    "next-mdx-remote": "^5.0.0",
+    "gray-matter": "^2.0.1",
+    "next": "^15.5.19",
+    "next-mdx-remote": "^6.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-share": "^5.2.2"
