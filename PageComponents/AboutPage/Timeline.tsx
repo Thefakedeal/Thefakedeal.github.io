@@ -24,9 +24,9 @@ const Timeline = () => {
             site: "https://mandalatech.io/"
         },
         {
-            title: "Studying at Fanshawe College",
-            date: "May 2025 - Present",
-            description: "Currently studying a Graduate Certificate course AI & Machine Learning, learning about data analysis, AI, data science and machine learning at Fanshawe College, Canada.",
+            title: "Graduated from Fanshawe College",
+            date: "May 2025 - August 2026",
+            description: "Graduated with a Graduate Certificate in Artificial Intelligence and Machine Learning (4.16 GPA), earning Dean’s Honour Roll in all terms and President’s Honour Roll overall.",
             site: "https://www.fanshawec.ca/"
         }
     ]
